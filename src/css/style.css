@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /*for linkedin*/
 /*fonts used: 
 font-family: 'Cormorant Garamond', serif;   ...for main text
-font-family: 'EB Garamond', serif;   ..for navbar*/ 
+font-family: 'EB Garamond', serif;   ..for navbar and others*/ 
 
 
 /* primary colors used are #831c79, #1e1c1d for backgrounds ;
@@ -20,10 +20,17 @@ secondary color - rgb(249,218,96) for design*/
 }
 
 html, body {
-  
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
-  background-image: linear-gradient(#831c79,transparent 200%), url('');
-  background-color: #831c79;
+  background-image:  linear-gradient(110deg,#831c79,transparent 200%),url('../images/code.png');
+  background-repeat: no-repeat,repeat;
+  background-size: 100% 100%, 45px 45px;
+  background-position: 100% 100%, cover;
+
+
+ 
+
   box-sizing: border-box;
    
  
@@ -52,13 +59,13 @@ li{
     background-color: #1e1c1d; 
     color: #C5B6C5; 
     box-sizing: content-box;
-    max-width: 23vw;
+    max-width: 80px;
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 10px;
+    border-bottom-right-radius: 4px;
    
     }
 
@@ -80,27 +87,24 @@ li{
 .img-wrapper{
    position: absolute;
     top: 5vh;
-   right: 10vw;
+    right: 10vw;
     height: 220px;
     width: 55vw;
     margin: 2vh ;
-    background-image: url('../images/chat.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transform: rotateY(180deg);
+   
 
 
     }
 
-  .my-image{
-    border-top-left-radius: 40px;
-    border-top-right-radius: 70px;
-    border-bottom-left-radius: 70px;
+  .my-image {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 50px;
     border-bottom-right-radius: 2px;
-    display: block;
-    margin: 7% 20%;
-    transform: rotate(7deg) rotateY(180deg);
-    filter:  grayscale(50%);
+    margin: 12% 24%;
+    transform: rotate(-10deg) ;
+    filter:  grayscale(32%);
+    border: 6px solid #1e1c1d;
     
 
   }
@@ -116,26 +120,26 @@ li{
   .intro{
     font-family: 'Cormorant Garamond', serif;
     color:  #C5B6C5 ;
-    margin: 10vh 0 0 0 ;
     padding: 5%;
-    background-color: rgba(18,18,18,0.2);
+    /* background-color: rgba(30,28,29,0.3); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 2vh;
 
 
   }
 
 
   .intro-headline{
-    font-weight: 700;
-    font-size: 1.9rem;
+    font-size: 1.75rem;
+    padding: 15px 0px;
 
   }
 
   .intro-para{
-    padding-top: 20px;
+    padding: 10px 0;
     font-weight: 500;
     font-size: 18px;
 
@@ -148,36 +152,64 @@ li{
 
 
 .index-footer{
-  border: 1px solid green;
-   color: #C5B6C5;
+  color: #C5B6C5;
   font-family: 'EB Garamond', serif; 
-  margin-top: 0;
+ 
+  
 }
 
+
+.footer-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1e1c1d;
+  position: absolute;
+  bottom:0px;
+  right:0px;
+  width: 80px;
+  height: 150px;
+
+
+
+}
 
 .linkedin{
-     color: white;
-    background-color: #0072b1;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    border-radius: 2px;
-    height: 45px;
-    width:45px;
-    padding: 0.2%;
+    background-image: url('../images/linkedin.png');
+    background-size: 100% 100%;
+    height: 25px;
+    width: 30px;
     text-decoration: none;
+    cursor: pointer;
+
 }
 
-.github img{
-    border-radius: 50%;
+.stackoverflow{
+  background-image: url('../images/stackoverflow.png');
+  background-size: 100% 100%;
+  height: 25px;
+  width: 26px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.github {
     cursor: pointer;
     text-decoration: none;
-    height: 25px;
-    width: 25px;
+    height: 29px;
+    width: 29px;
+    background-image: url('../images/github.png');
+    background-size: 100% 100%;
 }
 
 .copyright{
-  font-size: 1rem;
-  font-weight: 500;
+
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
 }
 
 
@@ -186,18 +218,16 @@ li{
 
 
 
-.html-text{
+.html-css{
   font-family: 'EB Garamond', serif; 
-  color:rgb(249,218,96);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  opacity: 0.3;
+  color:#C5B6C5;
+  opacity: 0.35;
   width: 100vw;
   padding: 5px 0 5px 0;
-  margin: 15vh 0 0 10px;
-  animation: move 16s linear infinite;
- 
+  margin: 10vh 0 0 10px;
+  animation: move 14s linear infinite;
+  position: absolute;
+  top:0;
  
   
 }
@@ -207,7 +237,7 @@ li{
   font-weight: 400;
   font-size: 1.2rem;
   margin-right: 25px;
-  text-shadow: -4px 4px #1e1c1d;
+  text-shadow: -3px 3px #1e1c1d;
 
  
 
@@ -215,14 +245,14 @@ li{
 
 
 
-@keyframes move {
+/* @keyframes move {
   0%{
- transform: translate3d(125vw, 0, 0);
+ transform: translateX(135vw);
 
   }
 
   100%{
-    transform: translate3d(-240vw, 0, 0);
+    transform: translateX(-200vw);
     
   }
-}
+} */
