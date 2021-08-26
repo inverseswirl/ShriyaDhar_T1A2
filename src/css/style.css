@@ -6,8 +6,9 @@ font-family: 'Cormorant Garamond', serif;   ...for main text
 font-family: 'EB Garamond', serif;   ..for navbar and others*/ 
 
 
-/* primary colors used are #831c79, #1e1c1d for backgrounds and #C5B6C5 for text ;*/
-/*secondary colors for code cloud- rgb(249,218,96) , #D8FE19for design */ 
+/* primary colors used are #6b2a65,  #6a2c64 for backgrounds and #C5B6C5 for text ;*/
+/*secondary colors for code cloud- #ffd000 , ##22af97, #fa7500 for design */ 
+
 
 
 /* general styling */
@@ -22,14 +23,9 @@ html, body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-image:  linear-gradient(60deg,#831c79,transparent 400%),linear-gradient(340deg,#831c79 0%,transparent 10.1% ),url('../images/code.png');
-  background-repeat: no-repeat,no-repeat,repeat;
-  background-size: 100% 100%,  100% 100%,45px 45px;
-  background-position: 100% 100%,  100% 100%,100% 100%;
-
-
- 
-
+  background-image:  linear-gradient(320deg, #6b2a65,transparent 100%), url('../images/flower.jpg');
+  background-size: 100% 100%,  100% 100%;
+  background-position: 100% 100%,50% 60%  ;
   box-sizing: border-box;
    
  
@@ -55,21 +51,25 @@ li{
 
 .navbar{
     font-family: 'EB Garamond', serif; 
-    background-color: #1e1c1d; 
     color: #C5B6C5; 
-    max-width: 80px;
-    height: 150px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
-    border-bottom-right-radius: 4px;
+    align-items: flex-start;
+    position: relative;
+    padding-left: 23px;
+    /* background-color: #6a2c64; */
    
-    }
+   }
+
+  
+
+
 
 .nav-list{
     text-transform: lowercase;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   
    }
 .nav-link:hover{
@@ -84,27 +84,26 @@ li{
 
 .img-wrapper{
    position: absolute;
-    top: 5vh;
-    right: 10vw;
+    top: 2vh;
+    left: 20vw;
     height: 200px;
     width: 55vw;
     margin: 2vh ;
- 
-   
+    opacity:0.85;
+    
 
 
     }
 
   .my-image {
-    border-top-left-radius: 12px;
-    border-top-right-radius: 60px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 4px;
+    border-radius: 25px 12px  / 40px 2px;
     margin: 0% 18%;
-    transform: rotate(-10deg) ;
-    filter:  grayscale(32%);
-    border:3px solid #1e1c1d;
-    box-shadow: 2px 14px 20px 2px #1e1c1d;
+    filter:  grayscale(20%);
+    box-shadow: 2px 14px 20px 2px #6b2a65;
+    width: 85px;
+    height:110px;
+    /* display: none; */
+   
 
     
 
@@ -122,12 +121,11 @@ li{
     font-family: 'Cormorant Garamond', serif;
     color:  #C5B6C5 ;
     padding: 5%;
-    /* background-color: rgba(30,28,29,0.2); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 12vh;
+    margin-top: 0vh;
 
 
   }
@@ -143,7 +141,6 @@ li{
   .intro-para{
     padding: 2px 0;
     font-weight: 500;
-    font-size: 1rem;
 
   }
   
@@ -155,8 +152,7 @@ li{
 
 .index-footer{
   color: #C5B6C5;
-  font-family: 'EB Garamond', serif; 
- 
+  font-family: 'EB Garamond', serif;  
   
 }
 
@@ -166,7 +162,6 @@ li{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #1e1c1d;
   position: absolute;
   bottom:0px;
   right:0px;
@@ -208,7 +203,7 @@ li{
 
 .copyright{
 
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   position: absolute;
   bottom: 0;
@@ -251,8 +246,8 @@ li{
 }
 
 .style-code{
-  color: rgb(249,218,96);
-  font-size: 14px;
+  color: #ffd000;
+  font-size: 16px;
   font-family: 'EB Garamond', serif; 
   animation: flash 2.5s linear forwards infinite ;
   display: inline-block;
@@ -260,14 +255,14 @@ li{
 
 }
 .style-code1{
-  color: #D8FE19;
+  color: #22af97;
   font-size: 1rem;
   font-family: 'EB Garamond', serif; 
   animation: flash 4.5s ease-out forwards infinite;
   display: inline-block;
 }
 .style-code3{
-  color: #C5B6C5 ;
+  color: #fa7500 ;
   font-size: 1rem;
   font-family: 'EB Garamond', serif; 
   animation: flash 5.5s ease-out forwards infinite ;
