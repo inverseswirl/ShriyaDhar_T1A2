@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /*for linkedin*/
+/*fonts used: 
+font-family: 'Cormorant Garamond', serif;   ...for main text
+font-family: 'EB Garamond', serif;   ..for navbar and others*/ 
+/* font for paragraphs - font-family: 'Fira Sans', sans-serif; */
+
+
+/*  colors used are #6b2a65,  #A16D9D and for backgrounds & borders  and #C5B6C5  and for text ;*/
+
+/* general styling */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  /* overflow: hidden; */
+  background-color: #6b2a65;
+  background-image: linear-gradient(320deg,#6b2a65,transparent 200%), url('../images/background.jpg');;
+  background-repeat: no-repeat;
+  background-size: 100% 100%,
+                   150% 100%;
+  background-position: 100% 100%,
+                      100% 100%;
+
+
+   
+}
+ 
+
+/* background-size: 100% 100%,
+                   120% 150%;
+  background-position: 100% 100%,
+                      100% 30%; */
+
+h1,h2,h3,h4,h5,h6,p,a,li,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+/* utilities */
+.flex-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.border{
+  box-sizing: content-box;
+  border-radius: 2px;
+  background-color:  #A16D9D ;
+  padding: 4px;
+}
+
+/* styling navbar.....*/
+
+.navbar{
+    font-family: 'EB Garamond', serif; 
+    color: #C5B6C5; 
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0px 15px 0 0 ;
+    position: fixed;
+ 
+   
+}
+
+  
+.nav-list{
+    text-transform: lowercase;
+    font-size: 1.3rem;
+  
+}
+  
+
+.nav-link{
+    border-bottom: 1px solid #A16D9D;
+}
+
+.nav-link:hover{
+  transform: translateY(2px); 
+  
+}
+
+    /* BLOG PAGE.................................. */
+
+
+.blogs-container{
+    width:50%;
+   margin:0 auto;
+  
+  }
+  
+  .blog-posts{
+    border:1px solid navy;
+  }
+  .blog-posts img{
+    height:100px;
+    width: 100px;
+   }
+  .blog-card{
+    display: flex;
+    justify-content: left;
+  }
+  
+
+
+
