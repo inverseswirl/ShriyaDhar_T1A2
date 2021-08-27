@@ -70,9 +70,6 @@ li{
    }
 
   
-
-
-
 .nav-list{
     text-transform: lowercase;
     font-size: 1.3rem;
@@ -82,15 +79,16 @@ li{
 
 .nav-link{
     border-bottom: 1px solid #6b2a65;
-  }
+}
 
 .nav-link:hover{
   transform: translateY(2px); 
   
- }
+}
 
 
- .sunshine{
+
+.sun{
     background-image: radial-gradient(circle at 50% 50%,rgb(255, 217, 1) 0%,rgb(255, 167, 5) 40%,transparent 70.50%);
     background-size:   40% 23%;
     background-position: 120% -3.5%;
@@ -100,11 +98,12 @@ li{
     position: absolute;
     top:0;
     opacity:0.5;
- }
+}
 
-.sunshine::after{
-  content: '';
-  background-image: radial-gradient(circle at 50% 50%,rgb(255, 217, 1) 0%,rgb(255, 167, 5) 40%,transparent 70.50%);
+
+ .sun::after{
+    content: '';
+    background-image: radial-gradient(circle at 50% 50%,rgb(255, 217, 1) 0%,rgb(255, 167, 5) 40%,transparent 60.50%);
     background-size:   50% 33%;
     background-position: 130% -10.5%;
     background-repeat: no-repeat;
@@ -112,84 +111,49 @@ li{
     width: 100vw;
     position: absolute;
     top:0;
-    /* animation: shine 2s linear infinite; */
+    animation: shine 2s linear infinite;
     opacity:0.5;
 }
- @keyframes shine{
- 0%{
-   opacity:0.5;
- }
- 50%{
-  opacity: 1;
- }
- 100%{
-  opacity: 0.5;
-  
 
- }
- }
- .dot1{
-   background-image: radial-gradient(circle at 50% 50%,rgb(255, 217, 1) 0%,rgb(255, 167, 5) 40%,transparent 70.50% );
-   height: 20px;
-   width: 20px;
-   animation: jump 6s linear  infinite;
 
- }
- .dot2{
-   background-image: radial-gradient(circle at 50% 50%,rgb(255, 217, 1) 0%,rgb(255, 167, 5) 40%,transparent 70.50% );
-   height: 20px;
-   width: 20px;
-   animation: jump 6s linear  infinite;
+@keyframes shine{
+    0%{
+      opacity:0.5;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0.5;
+    }
+      
 
- }
+}
+
  
- .dot3{
-   background-image: radial-gradient(circle at 50% 50%,rgb(255, 217, 1) 0%,rgb(255, 167, 5) 40%,transparent 70.50% );
-   height: 20px;
-   width: 20px;
-   animation: jump 6s linear  infinite;
 
- }
- 
- /* @keyframes jump {
-   0%{
-     opacity: 0;
-     transform:  translate(40px,-100px);
 
-   }
-   50%{
-     opacity:0.8;
-     transform:translate(70px,50px);
-   }
-
-   100%{
-  opacity:0;
-  transform: translate(40vw,300px);
-   }
-   
- } */
   /* image styling */
 
 
 .img-wrapper{
-   position: absolute;
-    top: 0vh;
-    right: 0vw;
-    width: 90px;
-    height:125px;
-    margin: 2vh ;
-    opacity:0.8;
-    background-color:   #6b2a65;
-    border-radius: 30px 12px  / 40px 2px;
+    position: absolute;
+    top: 0vh; 
+    right: 0vw; 
+    width: 90px; 
+    height:125px; 
+    margin: 2vh ; 
+    opacity:0.8; 
+    background-color: #6b2a65; 
+    border-radius: 30px 12px  / 40px 2px;  
+    display: none; 
 
- display: none;
-
-    }
+}
 
   .my-image {
-    border-radius: 25px 12px  / 40px 2px;
-    margin: 0% 18%;
-    filter:  grayscale(20%);
+    border-radius: 25px 12px  / 40px 2px; 
+    margin: 0% 18%; 
+    filter:  grayscale(20%); 
     box-shadow: 2px 14px 20px 2px #6b2a65;
     width: 85px;
     height:110px;
