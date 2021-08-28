@@ -195,18 +195,15 @@ input:active input:focus{
 
 
 
-.linkedin{
-    background-image: url('../images/linkedin.png');
-    background-size: 100% 100%;
+.linkedin img{
     height: 20px;
     width: 22px;
 }
   
 
 
-.stackoverflow{
-  background-image: url('../images/stackoverflow.png');
-  background-size: 100% 100%;
+.stackoverflow img{
+  
   height: 20px;
   width: 22px;
   margin-right: 12px;
@@ -215,26 +212,23 @@ input:active input:focus{
   
 
 
-.github {
-    cursor: pointer;
-    text-decoration: none;
+.github img{
     height: 21px;
     width: 21px;
-    background-image: url('../images/github.png');
-    background-size: 100% 100%;
     margin-right: 12px;
 }
 
-.twitter {
-  text-align: center;
-  cursor: pointer;
-  text-decoration: none;
+.twitter img{
+
   height: 21px;
   width: 21px;
-  background-image: url('../images/twitter.png');
-  background-size: 100% 100%;
   margin-left: 12px;
 } 
+
+
+
+
+
 
 /*  footer styling*/
 
@@ -257,6 +251,7 @@ input:active input:focus{
   align-items: center;
   padding-bottom: 1px;
   width: 100vw;
+  border-top: 1px solid #A16D9D ;
 
 }
 
@@ -481,11 +476,8 @@ input:active input:focus{
   cursor: pointer;
 }
 
-details[open]{
-  border:none;
-  outline: none;
-}
-details[open]:active{
+
+details[open]:active, details[open]:focus{
   border:none;
   outline: none;
 }
@@ -594,15 +586,17 @@ details[open]:active{
 }
 
 
-/* media queries */
 
-/* font-family: 'Fira Sans', sans-serif;
-    color:#C5B6C5;
-    padding: 20px 0 0px 0;
-    opacity:0.2;
-    position: absolute;
-    top: 5vh;
-    right:5vw; */
+
+
+
+
+
+
+
+
+/* media queries......................................................................... */
+
 
 @media only screen and (min-width: 768px){
 
@@ -626,7 +620,7 @@ details[open]:active{
     font-size: 1.2rem;
   }
   .external-links{
-    bottom: 25px;
+    bottom: 15px;
   }
   .linkedin{
     height: 30px;
