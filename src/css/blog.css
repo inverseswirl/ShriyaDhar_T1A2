@@ -8,7 +8,9 @@ font-family: 'EB Garamond', serif;   ..for navbar and others*/
 /* font for paragraphs - font-family: 'Fira Sans', sans-serif; */
 
 
-/*  colors used are #6b2a65,  #A16D9D and for backgrounds & borders  and #C5B6C5  and for text ;*/
+
+/*  colors used are #6b2a65,  #A16D9D and rgba(0,0,0,0.2) for backgrounds, borders;
+/* #C5B6C5  and for text */ 
 
 /* general styling */
 
@@ -35,11 +37,6 @@ html, body {
    
 }
  
-
-/* background-size: 100% 100%,
-                   120% 150%;
-  background-position: 100% 100%,
-                      100% 30%; */
 
 h1,h2,h3,h4,h5,h6,p,a,li,ul,ol{
     margin: 0;
@@ -78,26 +75,29 @@ li{
   padding: 4px;
 }
 
+
 /* styling navbar.....*/
 
 .navbar{
-    font-family: 'EB Garamond', serif; 
-    color: #C5B6C5; 
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 0px 15px 0 0 ;
-    position: fixed;
- 
-   
+  font-family: 'EB Garamond', serif; 
+  color: #C5B6C5; 
+  padding: 15px 0px 20px 0 ;
+  position: fixed;
+  background-attachment: fixed;
+  background-image:  linear-gradient( #6b2a65,transparent 500%) ;
+  width:100%; 
+
 }
+
 
   
 .nav-list{
     text-transform: lowercase;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   
 }
   
@@ -111,27 +111,162 @@ li{
   
 }
 
-    /* BLOG PAGE.................................. */
+    
 
 
-.blogs-container{
-    width:50%;
-   margin:0 auto;
-  
-  }
-  
-  .blog-posts{
-    border:1px solid navy;
-  }
-  .blog-posts img{
-    height:100px;
-    width: 100px;
+
+
+
+
+
+
+
+
+
+
+  /* BLOG PAGE.................................. ...............................................*/
+
+
+  .blogs-container{
+    width:80%;
+    margin:0 auto;
+    margin-top: 20vh;
    }
-  .blog-card{
-    display: flex;
-    justify-content: left;
-  }
+   
+   .blog-posts{
+      margin-bottom: 25px;
+      box-sizing: content-box;
+      border-radius: 2px;
+      background-color: rgba(0,0,0,0.2);
+      padding: 5px 10px;
+   }
+   
+   
+   .blog-card{
+     color:#C5B6C5 ;
+     
+   }
+   
+   .blog-card h2{
+    
+     font-weight: 700;
+     font-family: 'Cormorant Garamond', serif;
+     text-align: center;
+     font-size: 1.3rem;
+     border-bottom: 1px solid #A16D9D ;
+     margin: 0 0 10px 0;
+   }
+ 
+   .blog-card p:nth-child(2){
+ 
+     font-weight: 300;
+     font-family: 'Fira Sans', sans-serif;
+     font-size: 16px;
+     padding: 0 0 10px 0px;
+     text-align: left;
+   }
+   .blog-card p:nth-child(3){
+     font-weight: 300;
+     font-family: 'Fira Sans', sans-serif;
+     padding: 2px 0;
+     font-size: 12px;
+     text-align: center;
+   }
+ 
+   /* second class selector on article to fit images inside */
+   .img-fit img {
+     object-fit:cover;
+     object-position: 50% 50%;;
+     height:100%;
+     width: 100%;
+     padding-top: 10px;
+     
+   
+ 
+ }
+ 
+ 
+ 
+
+
+
+
+
+
+/* external links section styling .....*/
+
+
+
+.external-links{
+
+  width: 100vw;
+  padding-bottom: 10px; 
+  cursor: pointer;
+ 
+}
+
+
+
+
+.linkedin{
+    background-image: url('../images/linkedin.png');
+    background-size: 100% 100%;
+    height: 20px;
+    width: 22px;
+}
   
 
 
+.stackoverflow{
+  background-image: url('../images/stackoverflow.png');
+  background-size: 100% 100%;
+  height: 20px;
+  width: 22px;
+  margin-right: 12px;
+  
+}
+  
 
+
+.github {
+    cursor: pointer;
+    text-decoration: none;
+    height: 21px;
+    width: 21px;
+    background-image: url('../images/github.png');
+    background-size: 100% 100%;
+    margin-right: 12px;
+}
+
+.twitter {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  height: 21px;
+  width: 21px;
+  background-image: url('../images/twitter.png');
+  background-size: 100% 100%;
+  margin-left: 12px;
+} 
+
+/*  footer styling*/
+
+
+.index-footer{
+  color: #C5B6C5;
+  font-family: 'EB Garamond', serif;  
+  
+}
+
+
+.copyright{
+
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1px;
+  width: 100vw;
+
+}

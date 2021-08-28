@@ -8,7 +8,8 @@ font-family: 'EB Garamond', serif;   ..for navbar and others*/
 /* font for paragraphs - font-family: 'Fira Sans', sans-serif; */
 
 
-/*  colors used are #6b2a65,  #A16D9D and for backgrounds & borders  and #C5B6C5  and for text ;*/
+/*  colors used are #6b2a65,  #A16D9D and rgba(0,0,0,0.2) for backgrounds, borders;
+/* #C5B6C5  and for text */ 
 
 
 
@@ -35,15 +36,12 @@ html, body {
   background-position: 100% 100%,
                       100% 100%;
 
-
+                     
    
 }
  
 
-/* background-size: 100% 100%,
-                   120% 150%;
-  background-position: 100% 100%,
-                      100% 30%; */
+
 
 h1,h2,h3,h4,h5,h6,p,a,li,ul,ol{
     margin: 0;
@@ -70,6 +68,7 @@ input:active input:focus{
   border:none;
   outline: none;
 }
+
 
 /* utilities */
 .flex-row{
@@ -98,25 +97,27 @@ input:active input:focus{
 /* styling navbar.....*/
 
 .navbar{
-    font-family: 'EB Garamond', serif; 
-    color: #C5B6C5; 
-    height: 140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 0px 15px 0 0 ;
-  
- 
-   
-   }
+  font-family: 'EB Garamond', serif; 
+  color: #C5B6C5; 
+  padding: 15px 0px 20px 0 ;
+  position: fixed;
+  background-attachment: fixed;
+  background-image:  linear-gradient( #6b2a65,transparent 500%) ;
+  width:100%; 
+
+}
+
 
   
 .nav-list{
     text-transform: lowercase;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
   
-  }
+}
   
 
 .nav-link{
@@ -140,14 +141,14 @@ input:active input:focus{
 
 
   .intro{
-    font-family: 'Cormorant Garamond', serif;
+  
     color:  #C5B6C5 ;
     padding: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 25vh;
    
 
 
@@ -158,6 +159,7 @@ input:active input:focus{
     font-size: 1.5rem;
     padding: 10px 0px;
     border-bottom:0.5px solid #A16D9D;
+    font-family: 'Cormorant Garamond', serif;
 
   }
 
@@ -221,7 +223,16 @@ input:active input:focus{
     margin-right: 12px;
 }
 
-
+.twitter {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  height: 21px;
+  width: 21px;
+  background-image: url('../images/twitter.png');
+  background-size: 100% 100%;
+  margin-left: 12px;
+} 
 
 /*  footer styling*/
 
@@ -302,6 +313,25 @@ input:active input:focus{
  
 }
 
+/* second code cloud  */
+
+
+
+.second_group{
+   display: none;
+}
+
+@media only screen and (min-width: 768px){
+  .second_group{
+    font-family: 'Fira Sans', sans-serif;
+    color:#C5B6C5;
+    padding: 20px 0 0px 0;
+    opacity:0.2;
+    position: absolute;
+    top: 5vh;
+    right:5vw;
+  }
+}
 
 
 /* animation - A Code Cloud */
@@ -342,14 +372,15 @@ input:active input:focus{
 
 .grid{
     display: grid;
-    height: 20vh;
-    width: 84%;
-    padding-top: 20px;
+    height: 27vh;
+    width: 90%;
+    padding-top: 10px;
     margin: 0  auto;
+    margin-top: 16vh;
     grid-template-columns: 40% 60%;
-    grid-template-rows:50% 50%;
+    grid-template-rows:60% 40%;
     grid-gap: 4px;
-    filter: sepia(32%) opacity(76%);
+    filter: sepia(0%) opacity(72%);
     
      
 }
@@ -384,7 +415,7 @@ input:active input:focus{
 
 .img-fit img {
     object-fit:cover;
-    object-position: center;
+    object-position: 50% 50%;;
     height:100%;
     width: 100%;
 }
@@ -407,37 +438,48 @@ input:active input:focus{
 }
 
 .about summary{
-    padding: 15px 0 20px 0;
+    padding: 10px 0 20px 0;
     cursor: pointer;
     font-weight: 600;
+    font-size: 1.1rem;
 
 
 }
 
 
 .about[open] > summary{
-    padding: 6px 5px;
+    padding: 1px 5px;
     background-color: rgba(0,0,0,0.2);
     list-style: none;
     text-align: center;
+    font-size: 16px;
 
 }
    
 
 .about[open] > p{
-    padding: 10px 5px;
-    line-height: 1.2rem;
+    padding: 1vh 1vw;
+    line-height: 1.1rem;
     font-weight: 300;
     font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
    
     
+}
+.about[open] > p a{
+  
+  border-bottom:2px solid #A16D9D;
+  background-color: transparent;
+  color:  #C5B6C5;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 
 
 
-
-/* CONTACT PAGE ....................................................................................................... */
+/* CONTACT PAGE ...................................................................................................................... */
 
 
 
@@ -449,6 +491,7 @@ input:active input:focus{
     width: 100px; 
     height:125px; 
     margin: 0 auto ; 
+    margin-top: 20vh;
     opacity:0.8; 
     background-color: #6b2a65; 
     border-radius: 30px 12px  / 40px 2px;  
@@ -468,11 +511,11 @@ input:active input:focus{
 
 
 
- /* form styling */
+ /*Contact  form styling */
 .contact-form{
    color: #C5B6C5 ;
    font-family: 'Fira Sans', sans-serif;
-   background-image: url('');
+   
   
 }
 .contact-form label{
@@ -486,53 +529,95 @@ input:active input:focus{
   
 }
 
-.contact-form p{
+.info-para h1{
+  font-size: 1rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.info-para p{
     padding: 8px 15px;
     text-align: justify;
     margin: 0 10vw;
 }
 
 
-.info-para h1{
-  font-size: 1rem;
-  text-align: center;
-  padding-top: 5px;
-}
-.info-para p:nth-child(2){
-   text-align: center;
-}
 
-.border2{
-  width:300px;
-  position: absolute;
-  bottom: 30vh;
+
+
+
+
+
+/* containes input and label element */
+.input-container{
+  width: 70%;
+  margin:0 auto;
   border-radius: 4px;
-  padding: 10px 10px;
-  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.2);
  
 
 }
 
-.margin{
- margin-bottom: 20px;
+.padding{
+ padding: 20px 15px;
 
 }
+
 /* address styling */
 
 
-.contact-me{
+.index-footer address {
 
     position:absolute ;
     bottom: 60px;
     left:0;
     width:100%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight:300 ;
     padding:10px;
     line-height: 1.4rem;
-    /* background-color:  rgba(0, 0, 0, 0.24); */
     font-family: 'Fira Sans', sans-serif;
   
 }
 
+
+/* media queries */
+
+/* font-family: 'Fira Sans', sans-serif;
+    color:#C5B6C5;
+    padding: 20px 0 0px 0;
+    opacity:0.2;
+    position: absolute;
+    top: 5vh;
+    right:5vw; */
+
+@media only screen and (min-width: 768px){
+
+
+  html, body{
+    background-size: 100% 100%,
+                   100% 100%;
+  }
+  
+  .nav-list{
+    font-size: 1.5rem;
+  }
+
+  .intro{
+    margin-top: 30vh;
+  }
+  .intro-headline{
+    font-size: 1.8rem;
+  }
+  intro-para{
+    font-size: 1.2rem;
+  }
+
+
+
+
+
+
+
+}
