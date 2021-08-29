@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /*for linkedin*/
+
 /*fonts used: 
-font-family: 'Cormorant Garamond', serif;   ...for main text
-font-family: 'EB Garamond', serif;   ..for navbar and others*/ 
+font-family: 'Cormorant Garamond', serif;   ...for main headlines
+font-family: 'EB Garamond', serif;   ..for navbar*/ 
 /* font for paragraphs - font-family: 'Fira Sans', sans-serif; */
 
 
@@ -12,7 +13,7 @@ font-family: 'EB Garamond', serif;   ..for navbar and others*/
 /* #C5B6C5  and for text */ 
 
 
-
+/* MOBILE FIRST DESIGN ............*/
 
 
 
@@ -113,12 +114,8 @@ button:active, button:focus{
   font-family: 'EB Garamond', serif; 
   color: #C5B6C5; 
   padding: 15px 0px 20px 0 ;
-  position: fixed;
-  background-attachment: fixed;
-  background-image:  linear-gradient( #6b2a65,transparent 500%) ;
-  width:100%; 
   border-bottom: 1px solid #A16D9D  ;
-
+  background-color: #6b2a65;
 
 }
 
@@ -375,6 +372,18 @@ button:active, button:focus{
 /* ABOUT ME PAGE............................................................................................ */
 
 
+.about_me{
+  color: #C5B6C5;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2px 0;
+  border-bottom: 1px solid #A16D9D;
+  background-color: #6b2a65a9;
+
+}
+
 /* grid styling */
 
 
@@ -384,7 +393,7 @@ button:active, button:focus{
     width: 90%;
     padding-top: 10px;
     margin: 0  auto;
-    margin-top: 16vh;
+    margin-top: 2rem;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:60% 40%;
     grid-gap: 4px;
@@ -508,7 +517,16 @@ button:active, button:focus{
 
 /* CONTACT PAGE ...................................................................................................................... */
 
-
+.contact_me{
+  color: #C5B6C5;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2px 0;
+  border-bottom: 1px solid #A16D9D;
+  background-color: #6b2a65a9;
+}
 
   /* image styling... */
 
@@ -518,7 +536,7 @@ button:active, button:focus{
     width: 100px; 
     height:125px; 
     margin: 0 auto ; 
-    margin-top: 15vh;
+    margin-top: 2rem;
     opacity:0.8; 
     background-color: #6b2a65; 
     border-radius: 30px 12px  / 40px 2px;  
@@ -938,7 +956,7 @@ html,body{
   margin-top: 27vh;
 }
 .intro-headline{
-  font-size: 5rem;
+  font-size: 3.5rem;
 }
 .intro-para{
   font-size: 1.6rem;
@@ -949,6 +967,11 @@ html,body{
 
 .nav-list{
   font-size: 1.75rem;
+}
+
+
+.nav-link:visited{
+  border:1px solid #A16D9D;
 }
 
 /* contact page */
@@ -962,13 +985,26 @@ html,body{
 
 /* about me */
 
+
+.grid{
+  height: 55vh;
+  width:50%;
+  margin-top: 15vh;
+  margin: 16vh 0px 0 7rem;
+  float: left;
+  grid-gap: 0;
+ 
+
+}
 .about-details{
   height: 45vh;
+  
 }
 
 .about  summary{
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: 'EB Garamond', serif;
   
   
 }

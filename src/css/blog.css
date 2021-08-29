@@ -82,10 +82,9 @@ li{
   color: #C5B6C5; 
   padding: 15px 0px 20px 0 ;
   position: fixed;
-  background-attachment: fixed;
-  background-image:  linear-gradient( #6b2a65,transparent 500%) ;
   width:100%; 
   border-bottom: 1px solid #A16D9D  ;
+  background-color: #6b2a65;
 
 
 }
@@ -126,10 +125,24 @@ li{
   /* BLOG PAGE.................................. ...............................................*/
 
 
+  .blog_header{
+    color: #C5B6C5;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 63px 0 0px;  /*sum of navbar vertical length + padding*/
+    border-bottom: 1px solid #A16D9D;
+    background-color: #6b2a65;
+    position: fixed;
+    width: 100%;
+ 
+  }
+
   .blogs-container{
-    width:82%;
+    width:80%;
     margin:0 auto;
-    margin-top: 20vh;
+    margin-top: 9rem;
    }
    
    .blog-posts{
@@ -359,9 +372,8 @@ li{
 
 }
 
-/* total width of container= 220vw 
-There are 5 blog posts = 44vw for each;,but that wont leave any margin;
-Same height of blog posts as the container;
+/* total width of container= 260vw 
+There are 5 blog posts = 52vw for each;
 
 */
 
@@ -421,9 +433,22 @@ Same height of blog posts as the container;
 }
 
 
+
+
+
+
+
+
 }
 
 
 
+@media only screen and (min-width: 1440px){
 
+/* navbar */
 
+.nav-list{
+  font-size: 1.75rem;
+}
+
+}
