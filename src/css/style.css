@@ -388,7 +388,7 @@ button:active, button:focus{
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:60% 40%;
     grid-gap: 4px;
-    filter: sepia(30%) opacity(80%);
+    filter: sepia(18%) opacity(72%);
     
      
 }
@@ -454,17 +454,16 @@ button:active, button:focus{
     border:none;
 
 
+
 }
 
 
 .about[open] > summary{
-    padding: 1px 0px;
-    background-color: rgba(0,0,0,0.2);
+     padding: 10px 0 0 0;
+    background-color: rgba(0,0,0,0.3);
     list-style: none;
     text-align: center;
     font-size: 16px;
-    width: 95%;
-    margin: 0 auto;
     outline: none;
     border:none;
 
@@ -489,8 +488,9 @@ button:active, button:focus{
     font-weight: 300;
     font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
+   
     
 }
 .about[open] > p a{
@@ -518,7 +518,7 @@ button:active, button:focus{
     width: 100px; 
     height:125px; 
     margin: 0 auto ; 
-    margin-top: 20vh;
+    margin-top: 15vh;
     opacity:0.8; 
     background-color: #6b2a65; 
     border-radius: 30px 12px  / 40px 2px;  
@@ -548,19 +548,26 @@ button:active, button:focus{
 .contact-form label{
   font-weight: 400;
   font-size: 14px;
+  color:#6b2a65;
  
  
 }
 .contact-form input{
   font-weight: 400;
   font-size: 14px;
+ color:black;
   
 }
+.contact-form input::placeholder{
+  font-size: 14px;
+  color:#a392a2;
+}
 .contact-form button{
-  font-weight: 300;
+  font-weight: 600;
   font-size: 14px;
   padding: 4px;
   border: 1px solid  #A16D9D;
+  color:#6b2a65;
   
  
   
@@ -592,7 +599,8 @@ button:active, button:focus{
 .input-container{
   width: 220px;
   margin:0 auto;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.3);
+  background-color:#C5B6C5;
  
 
 }
@@ -691,8 +699,11 @@ button:active, button:focus{
   .grid{
     width: 70%;
     margin-top: 14vh;
-    height: 35vh;
+    height: 37vh;
    
+  }
+  .border{
+    padding: 6px;
   }
   .img-fit img {
     object-fit:cover;
@@ -751,40 +762,136 @@ button:active, button:focus{
 }
 
 
-/* media query for  */
+/* media query for  min-width 1024px */
+
 
 @media only screen and (min-width: 1024px){
+
+
+
+
+
+  /* main background*/
+
+html,body{
+  background-size: 100% 100%,
+                  145% 150%;
+background-position: 100% 100%,
+                  100% 50%;
+}
 
 
 /* about me page media query change */
 
 .grid{
-  height: 30vh;
+  height: 55vh;
   width:50%;
   margin-top: 15vh;
-  
+  margin: 16vh 0px 0 5rem;
+  float: left;
+  grid-gap: 0;
+ 
+
+}
+
+
+
+
+.border{
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+.img-fit img {
+  object-fit:cover;
+  object-position: 50% 70%;;
+  height:100%;
+  width: 100%;
 }
 
 .about-details{
-  margin: 25px 10px 0 10px;
+  margin: 22vh 40px 0 0;
+  height: 40vh;
+ 
+
 }
 
 .about summary{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
-.about[open] > summary{
-  font-size: 18px;
-  width: 50vw;
-  
 
-}
+
 .about[open] > p{
   padding: 5px 5px;
-  width: 50vw;
+  width: 20rem;
+  margin: 0 5rem;
+  font-size: 14px;
+  line-height: 1.55rem;
+  font-weight: 400;
+
+  
+}
+
+
+
+/* contact page media query */
+
+
+.contact-form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
   margin: 0 auto;
+  /* margin-top:  3rem; */
  
   
+}
+
+.contact-background{
+  position: absolute;
+  background-image: linear-gradient(320deg,#6b2a65,transparent 270%), url('../images/background.jpg');;
+  background-repeat: no-repeat;
+  background-size: 100% 100%,
+                   100% 200%;
+  background-position: 100% 100%,
+                      60% 50%;
+  width:90vw;
+  height: 50vh;
+  top:16rem;
+  right:4rem;
+ 
+}
+
+.info-para p{
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+
+.input-container{
+  margin-right: 13rem;
+  margin-top: 1rem;
+ 
+
+}
+
+.input-container{
+  width: 260px;
+
+}
+
+ 
+
+.input-container button{
+  width:240px;
+  margin: 10px 10px;
+
 }
 
 
