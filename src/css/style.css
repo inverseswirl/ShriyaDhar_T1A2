@@ -589,6 +589,7 @@ button:active, button:focus{
     text-align: justify;
     margin: 1px 10vw;
     font-size: 14px;
+    font-weight: 300;
 }
 
 
@@ -720,13 +721,14 @@ button:active, button:focus{
 }
 
 .about[open] > p{
-  padding: 1vh 15px;
+  padding: 10px;
   line-height: 1.1rem;
   font-weight: 300;
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
-  width: 70%;
-  margin: 0 auto;
+   width: 70%;
+   margin:0 auto;
+
 
 
   
@@ -767,11 +769,7 @@ button:active, button:focus{
 
 @media only screen and (min-width: 1024px){
 
-
-
-
-
-  /* main background*/
+/* main background*/
 
 html,body{
   background-size: 100% 100%,
@@ -779,6 +777,21 @@ html,body{
 background-position: 100% 100%,
                   100% 50%;
 }
+
+
+
+/* index page */
+
+.intro-headline{
+  font-size: 2.5rem;
+}
+
+
+
+
+
+
+
 
 
 /* about me page media query change */
@@ -829,7 +842,7 @@ background-position: 100% 100%,
   margin: 0 5rem;
   font-size: 14px;
   line-height: 1.55rem;
-  font-weight: 400;
+  font-weight: 300;
 
   
 }
@@ -846,14 +859,13 @@ background-position: 100% 100%,
   justify-content: center;
   width: 80%;
   margin: 0 auto;
-  /* margin-top:  3rem; */
  
   
 }
 
 .contact-background{
   position: absolute;
-  background-image: linear-gradient(320deg,#6b2a65,transparent 270%), url('../images/background.jpg');;
+  background-image: linear-gradient(110deg,#6b2a65,transparent 250%), url('../images/background.jpg');;
   background-repeat: no-repeat;
   background-size: 100% 100%,
                    100% 200%;
@@ -861,7 +873,7 @@ background-position: 100% 100%,
                       60% 50%;
   width:90vw;
   height: 50vh;
-  top:16rem;
+  top:17.5rem;
   right:4rem;
  
 }
@@ -870,7 +882,7 @@ background-position: 100% 100%,
   text-align: justify;
   font-size: 14px;
   line-height: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 
@@ -896,7 +908,86 @@ background-position: 100% 100%,
 
 
 
+}
 
+
+
+
+
+
+/* media queries for 1440px size latop large .............*/
+
+
+@media only screen and (min-width: 1440px){
+
+
+html,body{
+
+    background-image: linear-gradient(320deg,#6b2a65,transparent 300%), url('../images/background.jpg');;
+    background-repeat: no-repeat;
+    background-size: 100% 100%,
+                    145% 150%;
+    background-position: 100% 100%,
+                    100% 50%;
+  }
+  
+
+/* index page */
+
+.intro{
+  margin-top: 27vh;
+}
+.intro-headline{
+  font-size: 5rem;
+}
+.intro-para{
+  font-size: 1.6rem;
+}
+
+
+/* navbar */
+
+.nav-list{
+  font-size: 1.75rem;
+}
+
+/* contact page */
+
+.info-para{
+  font-size: 1rem;
+  padding:0;
+  margin:0;
+}
+
+
+/* about me */
+
+.about-details{
+  height: 45vh;
+}
+
+.about  summary{
+  font-size: 1.3rem;
+  font-weight: 700;
+  
+  
+}
+.about[open] > summary{
+   font-size: 1.4rem;
+ 
+
+}
+.about[open] > p{
+  padding: 12px;
+  width:25rem;
+  margin: 0 5rem;
+  font-size: 1.1rem;
+  line-height: 1.55rem;
+  font-weight: 300;
+
+ 
+  
+}
 
 
 
@@ -913,3 +1004,5 @@ background-position: 100% 100%,
 
 
 }
+
+
