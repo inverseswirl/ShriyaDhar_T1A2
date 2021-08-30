@@ -460,6 +460,10 @@ details summary::marker{
    display: none;
 }
 
+details summary::-webkit-details-marker{
+  display: none;
+ 
+}
 .about[open] > summary{
     padding: 2px 0 2px 0;
     background-color: rgba(0,0,0,0.3);
