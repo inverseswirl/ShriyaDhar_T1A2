@@ -298,7 +298,7 @@ li{
                    100% 100%;
   }
   .nav-list{
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
 
@@ -467,10 +467,10 @@ There are 5 blog posts = 52vw for each;
 
 
 .blog-card h2{
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .blog-card p:nth-child(2){
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 2rem;
 }
 
