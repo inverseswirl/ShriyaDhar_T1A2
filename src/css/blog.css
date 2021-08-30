@@ -128,13 +128,13 @@ li{
   .blog_header{
     color: #C5B6C5;
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
     text-align: center;
-    margin: 63px 0 0px;  /*sum of navbar vertical length + padding*/
-    border-bottom: 1px solid #A16D9D;
+    padding:2px 0;
     background-color: #6b2a65;
     position: fixed;
+    top:63px;
     width: 100%;
  
   }
@@ -334,10 +334,15 @@ li{
 
   /* blog page change */
 
+  .blog_header{
+    font-size: 1.4rem;
+    top:67px;
+}
+
 .blogs-container{
     width:60%;
     margin:0 auto;
-    margin-top: 20vh;
+    margin-top: 9rem;
 }
 
 .blog-posts{
@@ -357,14 +362,18 @@ li{
 @media only screen and (min-width: 1024px){
 
 
- 
-
+.blog_header{
+    font-size: 1.4rem;
+    top:67px;
+}
 
 
 .blogs-container{
   width: 260vw;     /*  beyong viewport content overflows*/
-  height:52vh;
+  height:50vh;
+  margin-top: 10rem;
   overflow-x: auto;
+  overflow-y: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -380,7 +389,7 @@ There are 5 blog posts = 52vw for each;
 
 .blog-posts{    /* applies to each blog post - has two children (content and image)*/
   width:52vw;
-  height:52vh;
+  height:50vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -448,7 +457,25 @@ There are 5 blog posts = 52vw for each;
 /* navbar */
 
 .nav-list{
-  font-size: 1.75rem;
+  font-size: 1.85rem;
 }
+
+.blog_header{
+  font-size: 1.5rem;
+  top:75px;
+}
+
+
+.blog-card h2{
+  font-size: 2rem;
+}
+.blog-card p:nth-child(2){
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.blogs-container{
+    margin-top: 14rem;
+ }
 
 }

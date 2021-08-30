@@ -2,11 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap'); /*for linkedin*/
-
 /*fonts used: 
 font-family: 'Cormorant Garamond', serif;   ...for main headlines
 font-family: 'EB Garamond', serif;   ..for navbar*/ 
-/* font for paragraphs - font-family: 'Fira Sans', sans-serif; */
+/* font for paragraphs or sub-headings - font-family: 'Fira Sans', sans-serif; */
 
 
 /*  colors used are #6b2a65,  #A16D9D and rgba(0,0,0,0.2) for backgrounds, borders;
@@ -30,7 +29,7 @@ html, body {
   width: 100vw;
   overflow: hidden;
   background-color: #6b2a65;
-  background-image: linear-gradient(320deg,#6b2a65,transparent 270%), url('../images/background.jpg');;
+  background-image: linear-gradient(320deg,#6b2a65,transparent 250%), url('../images/background.jpg');;
   background-repeat: no-repeat;
   background-size: 100% 100%,
                    150% 100%;
@@ -100,9 +99,10 @@ button:active, button:focus{
 
 .border{
   box-sizing: content-box;
-  border-radius: 2px;
-  background-color:  #A16D9D ;
-  padding: 4px;
+  background-color:  #6b2a65;
+  padding:5px;
+ 
+ 
 }
 
 
@@ -318,25 +318,7 @@ button:active, button:focus{
  
 }
 
-/* second code cloud  */
 
-
-
-.second_group{
-   display: none;
-}
-
-@media only screen and (min-width: 768px){
-  .second_group{
-    font-family: 'Fira Sans', sans-serif;
-    color:#C5B6C5;
-    padding: 20px 0 0px 0;
-    opacity:0.2;
-    position: absolute;
-    top: 5vh;
-    right:5vw;
-  }
-}
 
 
 /* animation - A Code Cloud */
@@ -375,11 +357,10 @@ button:active, button:focus{
 .about_me{
   color: #C5B6C5;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
   text-align: center;
   padding: 2px 0;
-  border-bottom: 1px solid #A16D9D;
   background-color: #6b2a65a9;
 
 }
@@ -393,11 +374,12 @@ button:active, button:focus{
     width: 90%;
     padding-top: 10px;
     margin: 0  auto;
-    margin-top: 2rem;
+    margin-top: 2vh;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows:60% 40%;
-    grid-gap: 4px;
     filter: sepia(18%) opacity(72%);
+   
+
     
      
 }
@@ -435,6 +417,8 @@ button:active, button:focus{
     object-position: 50% 50%;;
     height:100%;
     width: 100%;
+   
+
 }
 
 
@@ -446,7 +430,7 @@ button:active, button:focus{
     margin: 25px 15px 0 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     font-family: 'Cormorant Garamond', serif;
     color:  #C5B6C5 ;
@@ -468,14 +452,28 @@ button:active, button:focus{
 
 
 .about[open] > summary{
-     padding: 10px 0 0 0;
+    padding: 2px 0 2px 0;
     background-color: rgba(0,0,0,0.3);
     list-style: none;
     text-align: center;
     font-size: 16px;
     outline: none;
     border:none;
+    width: 90vw;
+    margin: 0 auto;
 
+}
+
+.about[open] > p{
+  padding: 5px 1vw;
+  line-height: 1.1rem;
+  font-weight: 300;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 14px;
+  width: 90vw;
+  margin: 0 auto;
+ 
+  
 }
 .about[open] > summary:active{
    
@@ -491,17 +489,7 @@ button:active, button:focus{
 }
    
 
-.about[open] > p{
-    padding: 1vh 1vw;
-    line-height: 1.1rem;
-    font-weight: 300;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 14px;
-    width: 90%;
-    margin: 0 auto;
-   
-    
-}
+
 .about[open] > p a{
   
   border-bottom:2px solid #A16D9D;
@@ -520,11 +508,10 @@ button:active, button:focus{
 .contact_me{
   color: #C5B6C5;
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
   text-align: center;
   padding: 2px 0;
-  border-bottom: 1px solid #A16D9D;
   background-color: #6b2a65a9;
 }
 
@@ -536,7 +523,7 @@ button:active, button:focus{
     width: 100px; 
     height:125px; 
     margin: 0 auto ; 
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     opacity:0.8; 
     background-color: #6b2a65; 
     border-radius: 30px 12px  / 40px 2px;  
@@ -560,32 +547,21 @@ button:active, button:focus{
 .contact-form{
    color: #C5B6C5 ;
    font-family: 'Fira Sans', sans-serif;
-   
+   font-weight: 400;
+   font-size: 14px;
   
 }
-.contact-form label{
-  font-weight: 400;
-  font-size: 14px;
-  color:#6b2a65;
- 
- 
-}
+
+
 .contact-form input{
-  font-weight: 400;
-  font-size: 14px;
- color:black;
+  color:black;
   
 }
-.contact-form input::placeholder{
-  font-size: 14px;
-  color:#a392a2;
-}
+
 .contact-form button{
   font-weight: 600;
-  font-size: 14px;
-  padding: 4px;
+  padding: 2px;
   border: 1px solid  #A16D9D;
-  color:#6b2a65;
   
  
   
@@ -593,11 +569,12 @@ button:active, button:focus{
 
 
 
+/* content para */
 
 .info-para h1{
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
-  padding: 10px;
+  padding: 5px 2px;
   font-family: 'Cormorant Garamond', serif; 
 
 }
@@ -614,12 +591,11 @@ button:active, button:focus{
 
 
 
-/* containes input and label element */
+/* contains input and label element */
 .input-container{
   width: 220px;
   margin:0 auto;
   background-color: rgba(0,0,0,0.3);
-  background-color:#C5B6C5;
  
 
 }
@@ -647,7 +623,7 @@ button:active, button:focus{
     font-size: 14px;
     font-weight:300 ;
     padding:10px;
-    line-height: 1.4rem;
+    line-height: 1.1rem;
     font-family: 'Fira Sans', sans-serif;
   
 }
@@ -665,17 +641,34 @@ button:active, button:focus{
 /* media queries......................................................................... */
 
 
+@media only screen and (min-width: 530px){
+
+.grid{
+  width: 70%;
+  margin-top: 2rem;
+  height: 30vh;
+}
+
+
+.img-fit{
+    object-position: 50% 0%;
+  }
+}
 @media only screen and (min-width: 768px){
 
-/* index page */
+/* index page ...............*/
   html, body{
     background-size: 100% 100%,
                    100% 100%;
   }
   
+
+  /* navbar */
   .nav-list{
     font-size: 1.5rem;
   }
+
+
 
   .intro{
     margin-top: 30vh;
@@ -686,6 +679,9 @@ button:active, button:focus{
   .intro-para{
     font-size: 1.2rem;
   }
+
+
+  /* external links style */
   .external-links{
     bottom: 19px;
     
@@ -712,19 +708,23 @@ button:active, button:focus{
    
   }
   
-  /* about page */
+  /* about page ...................*/
 
-
-  .grid{
+.about_me{
+  font-size: 1.4rem;
+}
+.grid{
     width: 70%;
-    margin-top: 14vh;
+    margin-top: 2rem;
     height: 37vh;
    
-  }
-  .border{
+}
+.border{
     padding: 6px;
-  }
-  .img-fit img {
+}
+
+
+.img-fit img {
     object-fit:cover;
     object-position: 40% 50%;
   
@@ -732,8 +732,9 @@ button:active, button:focus{
 .about[open] > summary{
   padding: 1px 5px;
   font-size: 1.1rem;
-  width: 70%;
-  margin: 0 auto;
+   width: 30rem;
+  margin: 0 auto; 
+
  
    
 }
@@ -744,7 +745,7 @@ button:active, button:focus{
   font-weight: 300;
   font-family: 'Fira Sans', sans-serif;
   font-size: 14px;
-   width: 70%;
+   width: 30rem;
    margin:0 auto;
 
 
@@ -777,20 +778,27 @@ button:active, button:focus{
  
  }
 
+ /* contact page ......................*/
+
+ .contact_me{
+  font-size: 1.4rem;
+ }
+
+
 
 
 }
 
 
-/* media query for  min-width 1024px */
+/* media query for  min-width 1024px.................. */
 
 
 @media only screen and (min-width: 1024px){
 
-/* main background*/
+/* main background.............*/
 
 html,body{
-  background-size: 100% 100%,
+background-size: 100% 100%,
                   145% 150%;
 background-position: 100% 100%,
                   100% 50%;
@@ -798,30 +806,26 @@ background-position: 100% 100%,
 
 
 
-/* index page */
+/* index page .............*/
 
 .intro-headline{
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
+.nav-list{
+  font-size: 1.4rem;
+}
 
-
-
-
-
-
-
-
-/* about me page media query change */
+/* about me page ...... */
 
 .grid{
   height: 55vh;
   width:50%;
-  margin-top: 15vh;
-  margin: 16vh 0px 0 5rem;
+  margin: 2.5rem 0px 0 5rem;
   float: left;
   grid-gap: 0;
- 
+  padding-top:0;
+  background-color: #6b2a65;
 
 }
 
@@ -838,28 +842,53 @@ background-position: 100% 100%,
   object-position: 50% 70%;;
   height:100%;
   width: 100%;
+
 }
+
+
+
+
 
 .about-details{
-  margin: 22vh 40px 0 0;
-  height: 40vh;
- 
-
+  margin: 2.5rem 0px 0 7rem;
+  height: 55vh;
+  background-image: linear-gradient(110deg,#6b2a65,transparent 500%), url('../images/background.jpg');;
+  background-repeat: no-repeat;
+  background-size: 100% 100%,
+                   130% 120%;
+  background-position: 100% 100%,
+                      0% 50%;
 }
-
 .about summary{
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 400;
+
+  
+
+}
+.about summary:nth-child(1){
+  margin-top:2rem;
+  /* margin-bottom: 2rem; */
 }
 
 
 
+.about[open] > summary{
+  width: 25rem;
+  margin: 0 auto;
+  padding-top:10px;
+
+}
+
+.about[open] summary:nth-child(1){
+  margin-top:10px;
+
+}
 .about[open] > p{
   padding: 5px 5px;
-  width: 20rem;
-  margin: 0 5rem;
+  width: 25rem;
   font-size: 14px;
-  line-height: 1.55rem;
+  line-height: 1.5rem;
   font-weight: 300;
 
   
@@ -867,7 +896,7 @@ background-position: 100% 100%,
 
 
 
-/* contact page media query */
+/* contact page media query ........*/
 
 
 .contact-form{
@@ -881,6 +910,9 @@ background-position: 100% 100%,
   
 }
 
+.contact-form label{
+    font-size: 16px;
+}
 .contact-background{
   position: absolute;
   background-image: linear-gradient(110deg,#6b2a65,transparent 250%), url('../images/background.jpg');;
@@ -890,42 +922,40 @@ background-position: 100% 100%,
   background-position: 100% 100%,
                       60% 50%;
   width:90vw;
-  height: 50vh;
-  top:17.5rem;
+  height: 20rem;
+  top:17.9rem;
   right:4rem;
  
 }
 
+
 .info-para p{
   text-align: justify;
-  font-size: 14px;
+  font-size: 1rem;
   line-height: 1.6rem;
   font-weight: 300;
 }
 
 
 .input-container{
-  margin-right: 13rem;
-  margin-top: 1rem;
- 
+  margin-right:12rem;
+  margin-bottom: 1rem;
+  width: 300px;
 
 }
 
-.input-container{
-  width: 260px;
 
-}
-
- 
 
 .input-container button{
-  width:240px;
+  width:260px;
   margin: 10px 10px;
 
 }
 
 
 
+
+
 }
 
 
@@ -933,7 +963,7 @@ background-position: 100% 100%,
 
 
 
-/* media queries for 1440px size latop large .............*/
+/* media queries for 1440px size latop large ...........................................*/
 
 
 @media only screen and (min-width: 1440px){
@@ -953,79 +983,129 @@ html,body{
 /* index page */
 
 .intro{
-  margin-top: 27vh;
+  margin-top: 10rem;
 }
 .intro-headline{
-  font-size: 3.5rem;
+  font-size: 3.1rem;
 }
 .intro-para{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif; 
 }
 
 
 /* navbar */
 
 .nav-list{
-  font-size: 1.75rem;
+    font-size: 1.75rem;
 }
 
 
 .nav-link:visited{
-  border:1px solid #A16D9D;
+    border:1px solid #A16D9D;
 }
+
+
+
+
 
 /* contact page */
 
-.info-para{
-  font-size: 1rem;
-  padding:0;
-  margin:0;
+.contact-background{
+  position: absolute;
+  background-image: linear-gradient(110deg,#6b2a65,transparent 250%), url('../images/background.jpg');;
+  background-repeat: no-repeat;
+  background-size: 100% 100%,
+                   100% 200%;
+  background-position: 100% 100%,
+                      60% 50%;
+  width:90vw;
+  height: 30rem;
+  top:20rem;
+  right:4rem;
+ 
 }
 
+.info-para h1{
+  font-size: 1.6rem;
+}
+.info-para p{
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+}
+
+.input-container{
+  margin-right:20rem;
+  margin-bottom: 1rem;
+  width: 450px;
+
+}
+
+.padding{
+  padding: 20px 15px; 
+ 
+ 
+ }
 
 /* about me */
 
 
 .grid{
-  height: 55vh;
-  width:50%;
-  margin-top: 15vh;
-  margin: 16vh 0px 0 7rem;
-  float: left;
-  grid-gap: 0;
- 
+    height: 52vh;
+    width:50%;
+    margin: 4.4rem 0px 0 0rem;
+    float: left;
+    background-color: #6b2a65;
 
 }
+
+
 .about-details{
-  height: 45vh;
+    height: 52vh;
+    margin: 4.4rem 0px 0 0; 
+    background-image: linear-gradient(110deg,#6b2a65,transparent 400%), url('../images/background.jpg');;
+    background-repeat: no-repeat;
+    background-size: 100% 100%,
+                     100% 200%;
+    background-position: 100% 100%,
+                        60% 50%;
+    display: flex;
   
 }
 
 .about  summary{
-  font-size: 1.3rem;
-  font-weight: 400;
-  font-family: 'EB Garamond', serif;
+    font-size: 1.55rem;
+    font-weight: 400;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
   
   
 }
 .about[open] > summary{
    font-size: 1.4rem;
+    width:40rem;
+    margin: 0 auto;
  
 
 }
 .about[open] > p{
-  padding: 12px;
-  width:25rem;
-  margin: 0 5rem;
-  font-size: 1.1rem;
-  line-height: 1.55rem;
-  font-weight: 300;
-
- 
-  
+    padding: 12px;
+    width:40rem;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+    font-weight: 300; 
 }
 
+.about[open] summary:nth-child(1){
+  margin-top:2rem;
 
+}
+.about[open] > p{
+  margin-bottom: 2rem;
+}
 
 
 

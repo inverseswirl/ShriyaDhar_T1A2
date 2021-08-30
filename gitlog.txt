@@ -1,3 +1,15 @@
+commit 42d998a3179e755f61708908ba283194c2cd97d1
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Sun Aug 29 19:47:16 2021 +1000
+
+    page identification
+
+commit cb12a1dced7124ae86c8e8b5410dbb88590fb16e
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Sun Aug 29 18:26:49 2021 +1000
+
+    gitlog.txt update
+
 commit 392bb37555e37fd8d64e89b66a99a809aa712cbb
 Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
 Date:   Sun Aug 29 15:44:38 2021 +1000
