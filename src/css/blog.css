@@ -457,21 +457,21 @@ There are 5 blog posts = 52vw for each;
 /* navbar */
 
 .nav-list{
-  font-size: 1.85rem;
+  font-size: 1.55rem;
 }
 
 .blog_header{
   font-size: 1.5rem;
-  top:75px;
+  top:68px;
 }
 
 
 .blog-card h2{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 .blog-card p:nth-child(2){
-  font-size: 1.1rem;
-  line-height: 2rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
 }
 
 .blogs-container{
