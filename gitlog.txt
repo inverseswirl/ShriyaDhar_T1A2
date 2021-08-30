@@ -1,3 +1,21 @@
+commit 440f92fb1a89f63a41e8abc76450624f5bf7b6f9
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Tue Aug 31 00:00:46 2021 +1000
+
+    navbar-font
+
+commit ab9b8cf0ab692c2f04e6b3d9eb9ba5171264b9da
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Mon Aug 30 23:53:36 2021 +1000
+
+    sitemap
+
+commit b516bf9d7f33bc5d1fa6fbee62f87030a67df892
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Mon Aug 30 23:50:14 2021 +1000
+
+    media-query-about-me
+
 commit ccde9ef106c404c24d1c1c3d2ac1c12f64e12f96
 Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
 Date:   Mon Aug 30 21:28:13 2021 +1000

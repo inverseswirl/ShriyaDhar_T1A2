@@ -453,8 +453,12 @@ button:active, button:focus{
 
 
 
+
 }
 
+details summary::marker{
+   display: none;
+}
 
 .about[open] > summary{
     padding: 2px 0 2px 0;
