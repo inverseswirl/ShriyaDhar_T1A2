@@ -202,9 +202,43 @@ li{
  
  
 
+/* horizontal scroll */
 
+.scroll{
 
+  color:#C5B6C5;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.2rem;
+  padding-top: 10px;
+  animation: glide 2.5s linear  infinite;
+  display: block;
+  position: absolute;
+  left: 42%;
+}
 
+@keyframes glide{
+  0%{
+    transform: translate(0);
+    opacity:0.4;
+  }
+  25%{
+    opacity:0.5;
+    transform: translate(1rem);
+  }
+  50%{
+    opacity: 1;
+    transform: translate(2rem);
+    
+  }
+  75%{
+    transform: translate(1rem);
+    opacity:0.4;
+  }
+  100%{
+    transform: translate(0);
+    opacity:0;
+  }
+}
 
 
 
@@ -475,7 +509,7 @@ There are 5 blog posts = 52vw for each;
 }
 
 .blogs-container{
-    margin-top: 14rem;
+    margin-top: 11rem;
  }
 
 }

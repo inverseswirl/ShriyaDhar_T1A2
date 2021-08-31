@@ -24,10 +24,8 @@ font-family: 'EB Garamond', serif;   ..for navbar*/
     box-sizing: border-box;
 }
 
-html, body {
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+html{
+ 
   background-color: #6b2a65;
   background-image: linear-gradient(320deg,#6b2a65,transparent 270%), url('../images/background.jpg');;
   background-repeat: no-repeat;
@@ -40,7 +38,11 @@ html, body {
    
 }
  
-
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
 
 
 h1,h2,h3,h4,h5,h6,p,a,li,ul,ol{
@@ -952,6 +954,7 @@ background-position: 100% 100%,
   height: 20rem;
   top:17.9rem;
   right:4rem;
+  z-index:-1;
  
 }
 
@@ -959,7 +962,7 @@ background-position: 100% 100%,
 .info-para p{
   text-align: justify;
   font-size: 1rem;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
   font-weight: 300;
 }
 
@@ -996,7 +999,7 @@ background-position: 100% 100%,
 @media only screen and (min-width: 1440px){
 
 
-html,body{
+html{
 
     background-image: linear-gradient(320deg,#6b2a65,transparent 300%), url('../images/background.jpg');;
     background-repeat: no-repeat;

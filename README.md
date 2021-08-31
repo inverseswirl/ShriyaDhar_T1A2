@@ -22,14 +22,21 @@ The website contains my _blog posts _to showcase additional areas of my work. It
 
 
 
-Functionality
+#### **Functionality**
+- It provided easy to use navbar for users to navigate across different web pages.
+- There are interactive widgets for checking my education or work experience.
+- There is a form element to receive a prospective client's name and email id.
+- There is information about my blog posts that employer can go through to assess my abilities.
 
 
 
-Sitemap
+#### **Sitemap**
+![sitemap](./docs/sitemap.png)
 
 
 
-Screenshots
 
-Tech stack
+
+#### **Tech stack**
+
+The tech stack used is HTML and CSS.
