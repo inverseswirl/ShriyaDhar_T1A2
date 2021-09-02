@@ -9,12 +9,12 @@
 
 ### **Website Mobile Designs screenshots**
 
-<img  src="./docs/mobilehome.png" height="100" width="100" alt="Mobile Home page">
+<img  src="./docs/mobilehome.png" height="150" width="150" alt="Mobile Home page">
+<img  src="./docs/mobileaboutme.png" height="150" width="150" alt="Mobile About Me page">
+<img  src="./docs/mobilecontact.png" height="150" width="150" alt="Mobile Contact page">
+<img  src="./docs/mobileblog.png" height="150" width="150" alt="Mobile Blog page">
 
-![Mobile About me Page](./docs/mobileaboutme.png)
 
-![Mobile Contact Page](./docs/mobilecontact.png) 
-![Mobile Blog Page](./docs/mobileblog.png)
 
 
 ### **Purpose of the website:**
