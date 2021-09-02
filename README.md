@@ -9,10 +9,9 @@
 
 ### **Website Mobile Designs screenshots**
 
-<img  src="./docs/mobilehome.png" height="150" width="150" alt="Mobile Home page">
-<img  src="./docs/mobileaboutme.png" height="150" width="150" alt="Mobile About Me page">
-<img  src="./docs/mobilecontact.png" height="150" width="150" alt="Mobile Contact page">
-<img  src="./docs/mobileblog.png" height="150" width="150" alt="Mobile Blog page">
+<img  src="./docs/mobilehome.png" height="660" width="375" alt="Mobile Home page">  <img  src="./docs/mobileaboutme.png" height="660" width="375" alt="Mobile About Me page">  
+
+<img  src="./docs/mobilecontact.png" height="660" width="375" alt="Mobile Contact page">  <img  src="./docs/mobileblog.png" height="660" width="375" alt="Mobile Blog page">
 
 
 
