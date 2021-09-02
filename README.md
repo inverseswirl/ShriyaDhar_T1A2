@@ -9,7 +9,8 @@
 
 ### **Website Mobile Designs screenshots**
 
-![Mobile Home page](./docs/mobilehome.png)  
+<img  src="./docs/mobilehome.png" height="100" width="100" alt="Mobile Home page">
+
 ![Mobile About me Page](./docs/mobileaboutme.png)
 
 ![Mobile Contact Page](./docs/mobilecontact.png) 
