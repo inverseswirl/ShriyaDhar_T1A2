@@ -451,6 +451,7 @@ button:active, button:focus{
     border:none;
     border-bottom: 1px solid #A16D9D;
     list-style: none;
+     margin: 0 0vw 0  0vw;
 
 
 
@@ -467,7 +468,6 @@ details summary::-webkit-details-marker{
 }
 .about[open] > summary{
     padding: 2px 0 2px 0;
-    background-color: rgba(0,0,0,0.3);
     list-style: none;
     text-align: center;
     font-size: 16px;
@@ -479,6 +479,7 @@ details summary::-webkit-details-marker{
 }
 
 .about[open] > p{
+  border-top: 1px solid #A16D9D;
   padding: 5px 1vw;
   line-height: 1.1rem;
   font-weight: 300;
@@ -679,12 +680,11 @@ details summary::-webkit-details-marker{
 /* 768px */
 @media only screen and (min-width: 768px){
 
-/* index page ...............*/
-  html, body{
-    background-size: 100% 100%,
-                   100% 100%;
+
+  html{
+    background-size: 130% 100%;
+    background-position: 110% 100%;
   }
-  
 
   /* navbar */
   .nav-list{
@@ -737,7 +737,7 @@ details summary::-webkit-details-marker{
   font-size: 1.4rem;
 }
 .grid{
-    width: 40%;
+    width: 50%;
     margin-top: 2rem;
     height: 30vh;
    
@@ -754,14 +754,20 @@ details summary::-webkit-details-marker{
 }
 
 .about-details{
-   margin-top: 2rem;
+   margin-top: 2.5rem;
+  
 
 }
+
+.about summary{
+    /* margin:0 0vw 0 -12rem; */
+    font-size: 1.2rem;
+}
 .about[open] > summary{
-  padding: 1px 5px;
-  font-size: 1.1rem;
-   width: 23rem;
-  margin: 0 auto; 
+    padding: 1px 5px;
+    font-size: 1.1rem;
+    width: 23rem;
+    margin: 0 auto; 
 
  
    
@@ -775,6 +781,7 @@ details summary::-webkit-details-marker{
   font-size: 14px;
    width: 23rem;
    margin:0 auto;
+   
 
 
 
@@ -890,6 +897,8 @@ background-position: 100% 100%,
 .about summary{
   font-size: 1.3rem;
   font-weight: 400;
+  margin:0 0vw 0 -13rem;
+  
 
   
 
@@ -948,10 +957,10 @@ background-position: 100% 100%,
                      
 
 background-repeat: no-repeat;
-background-size: 100% 100%;
-background-position: 100% 100%;
+background-size: 100% 200%;
+background-position: 100% 0%;
 width:90vw;
-height: 20rem;
+height: 19rem;
 top:17.9rem;
 right:4rem;
 border-radius:4px; 
@@ -959,12 +968,9 @@ opacity:0.85;
                   
 
                     
-                
-
-
- 
 }
-/* */
+
+
 
 .info-para p{
   text-align: justify;
@@ -1055,7 +1061,7 @@ html{
   background-position: 100% 100%,
                       60% 0%;
   width:90vw;
-  height: 27rem;
+  height: 24rem;
   top:18rem;
   right:4rem;
   border-radius: 4px;
@@ -1102,7 +1108,8 @@ html{
 
 .about-details{
     height: 52vh;
-    margin: 4.4rem 0 0 0;                   
+    margin: 4.4rem 0 0 0;  
+ 
   
 }
 
@@ -1110,7 +1117,9 @@ html{
     font-size: 1.4rem;
     font-weight: 400;
     font-family: 'EB Garamond', serif;
-    margin: 0;
+    margin: 0 0 0 -17.5rem;
+ 
+    
   
   
 }
@@ -1118,11 +1127,13 @@ html{
    font-size: 1.4rem;
     width:40rem;
     margin: 0 auto;
+    background-color: transparent;
  
 
 }
 .about[open] > p{
     padding: 12px;
+    border-top:1px solid #A16D9D;
     width:40rem;
     margin: 0 auto;
     font-size: 1.1rem;
