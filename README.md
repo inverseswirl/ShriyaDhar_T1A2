@@ -9,11 +9,11 @@
 
 ### **Website Mobile Designs screenshots**
 
-![Mobile Home page](./docs/Mobile_Home_Page)  
-![Mobile About me Page](./docs/Mobile_aboutme_page)
+![Mobile Home page](./docs/mobilehome.png)  
+![Mobile About me Page](./docs/mobileaboutme.png)
 
-![Mobile Contact Page](./docs/Mobile_Contact_page) 
-![Mobile Blog Page](./docs/Mobile_Blog_Page)
+![Mobile Contact Page](./docs/mobilecontact.png) 
+![Mobile Blog Page](./docs/mobileblog.png)
 
 
 ### **Purpose of the website:**
