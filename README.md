@@ -48,4 +48,11 @@ The website contains my _blog posts _to showcase additional areas of my work. It
 
 #### **Tech stack**
 
-The tech stack used is HTML and CSS.
+Technology used-
+- HTML
+- CSS
+
+Additonal tools
+- Diagrams.net 
+- Online image compression
+- Preview photoshop in Mac
