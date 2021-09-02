@@ -7,8 +7,15 @@
 
 [**Link to your GitHub repo**](https://github.com/inverseswirl/ShriyaDhar_T1A2)
 
+### **Website Mobile Designs screenshots**
+
+[Mobile Home page](./docs/Mobile_Home_Page) [ Mobile About me Page](./docs/Mobile_aboutme_page)
+
+[Mobile Contact Page](./docs/Mobile_Contact_page)   [ Mobile Blog Page](./docs/Mobile_Blog_Page)
+
 
 ### **Purpose of the website:**
+
 
 Hi! Welcome to my portfolio website. This website is designed to understand and apply the knowledge of HTML and CSS. 
 The primary purpose is to create a beautiful portfolio for prospective employers.
