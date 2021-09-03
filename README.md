@@ -20,22 +20,22 @@
 
 
 Hi! Welcome to my portfolio website. This website is designed to understand and apply the knowledge of HTML and CSS. 
-The primary purpose is to create a beautiful portfolio for prospective employers.
+The primary purpose is to create a beautifully designed and web-accessible portfolio for prospective employers.
 
 
 ### **Target audience for the website:**
 
-The website showcases my web development skills and interests areas. Also, it contains information to know more about my professional background.
+The website showcases my web development skills and interests areas to prospective employers. Also, it contains information to know more about my professional background.
 
 The website contains my _blog posts _to showcase additional areas of my work. It displays my passion for my craft & my interest to contribute to the developers' community.
 
 
 
 ### **Functionality**
-- It provided easy to use navbar for users to navigate across different web pages.
+- It provides easy to use navbar for users to navigate across different web pages.
 - There are interactive widgets for checking my education or work experience.
-- There is a form element to receive a prospective client's name and email id.
-- There is information about my blog posts that employer can go through to assess my abilities.
+- There is a form element to receive a prospective client's name and email.
+- Blog posts showcase my learnings and contribution to the developer community in general.
 
 
 
@@ -48,11 +48,14 @@ The website contains my _blog posts _to showcase additional areas of my work. It
 
 #### **Tech stack**
 
-Technology used-
+##### Technology used -
 - HTML
 - CSS
 
-Additonal tools
+##### Deployment -
+-Netlify
+
+##### Additonal tools
 - Diagrams.net 
 - Online image compression
 - Preview photoshop in Mac

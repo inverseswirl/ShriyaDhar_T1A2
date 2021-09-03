@@ -1,3 +1,111 @@
+commit c2112e5b223742ddb5fd0f7e188f6b074eb45f27
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Fri Sep 3 02:05:23 2021 +1000
+
+    google fonts link
+
+commit 9c8c78b3e18d3d8ade7aeb489ce6a6342b74bd54
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Fri Sep 3 01:41:16 2021 +1000
+
+    final setup
+
+commit b959f3286258f976863c5f150ef7b6904c9b04a3
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Fri Sep 3 01:21:49 2021 +1000
+
+    final setup
+
+commit 7fb45f54a60affef37eabd1fb25937b60d5b31cd
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Fri Sep 3 00:44:55 2021 +1000
+
+    contact-page
+
+commit 70f9ba7fad24187c33479ce49a4b5c9cc7465ca9
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 16:17:12 2021 +1000
+
+    read-me
+
+commit 71ad0d0ad92713c4dbdb76a58b58216e5f3b3788
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 16:14:15 2021 +1000
+
+    read-me
+
+commit 4a26986bf9d67f1b1b34632c949140615959b65c
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 16:12:22 2021 +1000
+
+    read-me
+
+commit 521efff6bf29461d24fcede4eace06cf76c3d548
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 16:10:59 2021 +1000
+
+    read-me
+
+commit e5218877238893669355b8ffe2953d699c0208ec
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 16:07:12 2021 +1000
+
+    read-me
+
+commit bab0ff188bace5b8719b25446e63630ee9b17b5e
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 16:04:39 2021 +1000
+
+    read-me update on screenshots
+
+commit e81d84ae3564d629ed87d3a0b1ca12c35171f779
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 15:56:39 2021 +1000
+
+    read-me update on screenshots
+
+commit 8f09dd851bb411765e2bd04de1df5158f361c025
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Thu Sep 2 15:24:28 2021 +1000
+
+    update blog_header dimensions
+
+commit 1037b0231862df32f5e8ee74bcad65d1b972afec
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Wed Sep 1 09:51:00 2021 +1000
+
+    update-copyright
+
+commit bfd81094b2518df06904cb34a021d8efc790eeed
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Wed Sep 1 08:30:23 2021 +1000
+
+    update
+
+commit 0b28fcf3394f9a21215862030620d3ee6dc93520
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Wed Sep 1 08:10:42 2021 +1000
+
+    read-me
+
+commit d0c42e78d74b0a99f74968667ebc2f0061607a41
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Wed Sep 1 08:08:30 2021 +1000
+
+    read-me
+
+commit ff94c61635c4bd8e4f5b4818e88f7c880f81edc7
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Tue Aug 31 09:24:45 2021 +1000
+
+    details-widget
+
+commit 5ff1dc678e32c2949fa61ed35bede9ee4ab16073
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Tue Aug 31 09:01:18 2021 +1000
+
+    details-widget
+
 commit 440f92fb1a89f63a41e8abc76450624f5bf7b6f9
 Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
 Date:   Tue Aug 31 00:00:46 2021 +1000
