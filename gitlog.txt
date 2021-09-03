@@ -1,3 +1,21 @@
+commit ca3ad4c1877cf26f8f9924fd65b0bd344b414256
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Fri Sep 3 11:02:45 2021 +1000
+
+    about and contact hashes
+
+commit baf76c5ce6dc02a5ca3ca5fb9e0516721efc3ddb
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Fri Sep 3 10:52:03 2021 +1000
+
+    meta-vuewport-changes
+
+commit 82b8d01a26c60855d1fb73abaea99c4660f9fcaa
+Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
+Date:   Fri Sep 3 10:40:32 2021 +1000
+
+    index and blog page hases
+
 commit c2112e5b223742ddb5fd0f7e188f6b074eb45f27
 Author: inverseswirl <68209878+inverseswirl@users.noreply.github.com>
 Date:   Fri Sep 3 02:05:23 2021 +1000
