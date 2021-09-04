@@ -23,7 +23,7 @@ font-family: 'EB Garamond', serif;   ..for navbar*/
 html{
  
   background-color: #6b2a65;
-  background-image: linear-gradient(320deg,#6b2a65,transparent 270%), url('../images/background.jpg');;
+  background-image: linear-gradient(320deg,#6b2a65,transparent 270%), url('../images/background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%,
                    150% 100%;
